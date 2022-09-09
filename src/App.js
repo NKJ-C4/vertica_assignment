@@ -1,16 +1,18 @@
-import './App.css';
-import Footer from './components/Footer';
-import MoveableArea from './components/MoveableArea';
-import NavBar from './components/NavBar';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Main/Home";
+import Page2 from "./Main/Page2";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <NavBar />
-      <MoveableArea />
-      <Footer />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/page2" element={<Page2 />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;

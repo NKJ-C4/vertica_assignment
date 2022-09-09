@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Time from "./Time";
 
-const NavBar = () => {
-  const [position, setPositition] = useState("center");
+const NavBar = props => {
+
   return (
     <div className="navbar">
       <div className="navbar-position-container">
@@ -11,14 +11,16 @@ const NavBar = () => {
           type="radio"
           name="center"
           value={"center"}
-          checked={position === "center"}
+          checked={props.position === "center"}
+          onClick={() => props.handlePositionChange("center")}
         />
         <label>Center</label>
         <input
           type="radio"
           name="lower_right"
           value={"lower_right"}
-          checked={position === "lower_right"}
+          checked={props.position === "lower_right"}
+          onClick={() => props.handlePositionChange("lower_right")}
         />
         <label>Lower Right</label>
       </div>

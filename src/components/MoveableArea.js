@@ -1,10 +1,7 @@
-import DraggableBox from "./DraggableBox";
 
-const MoveableArea = () => {
+const MoveableArea = props => {
     return (
-        <div className="moveable-area">
-            <DraggableBox />
-        </div>
+        <div className="moveable-area"></div>
     )
 }
 
