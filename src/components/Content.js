@@ -1,4 +1,3 @@
-import { Tweet } from "./Misc";
 
 const Content = () => {
   return (
@@ -28,7 +27,6 @@ const Content = () => {
             will usher in the new RTX 40-series graphics cards to replace
             Nvidia’s existing Ampere architecture.
           </p>
-          <Tweet />
           <p>
             Rumors continue to suggest Nvidia is working on RTX 4080 and RTX
             4090 GPUs. The monster RTX 4090 was originally rumored as a July
